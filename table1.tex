@@ -148,8 +148,8 @@
 \ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{115pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-
-\begin{longtable}[c]{%
+\begin{center}
+\begin{tabular}{c%
 	b{\gnumericColA}%
 	b{\gnumericColB}%
 	b{\gnumericColC}%
@@ -223,7 +223,8 @@
 	&
 \\
 \hhline{|-|-|~}
-\end{longtable}
+\end{tabular}
+\end{center}
 
 \ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{\languagename}}
 \gnumericTableEnd
